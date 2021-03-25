@@ -30,7 +30,7 @@
     "test": "jest --coverage",
     "precommit": "lint-staged",
     "prepublish": "npm test && npm run build",
-    "postinstall": "npm run build",
+    "prepare": "npm run build",
     "lint": "eslint 'src/**/*.js'",
     "testCI": "npm run test && cat coverage/lcov.info | coveralls"
   },
