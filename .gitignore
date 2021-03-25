@@ -40,5 +40,5 @@ coverage
 !.gitkeep
 todo.txt
 build/
-dist/
+# dist/
 temp/
