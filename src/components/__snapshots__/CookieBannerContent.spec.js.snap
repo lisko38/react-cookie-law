@@ -44,6 +44,7 @@ exports[`CookieBannerContent component should be rendered 1`] = `
     <a
       className="react-cookie-law-policy"
       href="/#"
+      rel="noreferrer"
       style={
         Object {
           "color": "#000000",
@@ -52,6 +53,7 @@ exports[`CookieBannerContent component should be rendered 1`] = `
           "textDecoration": "underline",
         }
       }
+      target="_blank"
     >
       Privacy Policy
     </a>

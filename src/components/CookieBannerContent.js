@@ -47,7 +47,7 @@ class CookieBannerContent extends React.Component {
             showPreferences && (<CookieBannerPreferences {...this.props} />)
           }
 
-          <a href={policyLink} className="react-cookie-law-policy" style={policyStyle}>{privacyPolicyLinkText}</a>
+          <a href={policyLink} className="react-cookie-law-policy" style={policyStyle} target="_blank" rel="noreferrer">{privacyPolicyLinkText}</a>
 
           <div className="react-cookie-law-button-wrapper" style={buttonWrapperStyle}>
             <button type="button" className="react-cookie-law-accept-btn" style={acceptButtonStyle || buttonStyle} onClick={() => onAcceptAll()}>
