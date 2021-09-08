@@ -50,9 +50,6 @@ class CookieBannerContent extends React.Component {
           <a href={policyLink} className="react-cookie-law-policy" style={policyStyle} target="_blank" rel="noreferrer">{privacyPolicyLinkText}</a>
 
           <div className="react-cookie-law-button-wrapper" style={buttonWrapperStyle}>
-            <button type="button" className="react-cookie-law-accept-btn" style={acceptButtonStyle || buttonStyle} onClick={() => onAcceptAll()}>
-              <span>{acceptButtonText}</span>
-            </button>
             {
               showPreferences
                 ? (
@@ -66,12 +63,15 @@ class CookieBannerContent extends React.Component {
                   </button>
                 )
             }
-            { 
+            {
               showDeclineButton && (
-              <button type="button" className="react-cookie-law-accept-btn" style={buttonStyle} onClick={() => onDecline()}>
-                <span>{declineButtonText}</span>
-              </button>
-            )}
+                <button type="button" className="react-cookie-law-accept-btn" style={buttonStyle} onClick={() => onDecline()}>
+                  <span>{declineButtonText}</span>
+                </button>
+              )}
+            <button type="button" className="react-cookie-law-accept-btn" style={acceptButtonStyle || buttonStyle} onClick={() => onAcceptAll()}>
+              <span>{acceptButtonText}</span>
+            </button>
           </div>
         </div>
       </div>
